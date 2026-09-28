@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spark-grn"
+version = "2.0.0"
+description = "Prior-aware ranking of directed TF-target candidates from single-cell RNA and ATAC data."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy==2.4.6",
+  "pandas==3.0.3",
+  "scikit-learn==1.8.0",
+  "scipy==1.17.1",
+  "torch==2.11.0",
+  "torch-geometric==2.7.0",
+  "tqdm==4.67.3",
+]
+
+[project.scripts]
+spark-grn-train = "spark_grn.cli.train:main"
+spark-grn-predict = "spark_grn.cli.predict:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
