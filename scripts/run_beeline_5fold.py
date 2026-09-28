@@ -51,7 +51,7 @@ def parse_args() -> argparse.Namespace:
         help="Model-initialization repeats on the same fixed BEELINE folds.",
     )
     parser.add_argument("--gpu-ids", nargs="+", default=["0"])
-    parser.add_argument("--max-workers", type=int, default=5)
+    parser.add_argument("--max-workers", type=int, default=10)
     parser.add_argument("--base-seed", type=int, default=20260823)
     parser.add_argument("--python", type=Path, default=Path(sys.executable))
     parser.add_argument("--deterministic", action="store_true")
