@@ -1,0 +1,40 @@
+{
+  "dataset": "mESC",
+  "model": {
+    "hidden_dim": 256,
+    "gnn_layers": 3,
+    "gat_heads": 4,
+    "rna_dropout": 0.1899257720423876,
+    "vib_bottleneck_dim": 512,
+    "vib_hidden_multiplier": 4,
+    "vib_logvar_min": -6.0,
+    "vib_logvar_max": 2.0,
+    "atac_dropout": 0.5170833332049818,
+    "fusion_heads": 16,
+    "fusion_layers": 2,
+    "fusion_ff_multiplier": 2,
+    "fusion_dropout": 0.3647923605265297,
+    "fusion_gate_floor": 0.00207598125050649,
+    "fusion_initial_atac_weight": 0.35948890341514245,
+    "fusion_residual_alpha_init": 0.8953677027198761,
+    "kan_hidden_dims": [32,16],
+    "kan_grid_size": 2,
+    "kan_spline_order": 4,
+    "kan_residual_alpha_init": 0.11105094908053048,
+    "modality": "BOTH"
+  },
+  "training": {
+    "batch_size": 512,
+    "learning_rate": 7.099710719579732e-05,
+    "weight_decay": 4.179203536144006e-06,
+    "epochs": 200,
+    "patience": 20,
+    "fixed_pos_weight": 0.9260021621743,
+    "kan_l1": 6.326991755480456e-05,
+    "kl_beta": 0.0003513236933345091,
+    "kl_warmup_fraction": 0.113903357395658,
+    "gradient_clip_norm": 0.5824409677070129,
+    "threshold": 0.5,
+    "seed": 42
+  }
+}

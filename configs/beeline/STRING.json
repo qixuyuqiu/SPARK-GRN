@@ -1,0 +1,43 @@
+{
+  "dataset": "BEELINE-STRING",
+  "model": {
+    "hidden_dim": 256,
+    "gnn_layers": 3,
+    "gat_heads": 2,
+    "rna_dropout": 0.34875965311981755,
+    "vib_bottleneck_dim": 256,
+    "vib_hidden_multiplier": 2,
+    "vib_logvar_min": -6.0,
+    "vib_logvar_max": 2.0,
+    "atac_dropout": 0.2,
+    "fusion_heads": 4,
+    "fusion_layers": 1,
+    "fusion_ff_multiplier": 2,
+    "fusion_dropout": 0.2,
+    "fusion_gate_floor": 0.1,
+    "fusion_initial_atac_weight": 0.5,
+    "fusion_residual_alpha_init": 0.05,
+    "kan_hidden_dims": [
+      128,
+      16
+    ],
+    "kan_grid_size": 5,
+    "kan_spline_order": 4,
+    "kan_residual_alpha_init": 0.8318664393455524,
+    "modality": "RNA_ONLY"
+  },
+  "training": {
+    "batch_size": 512,
+    "learning_rate": 0.00045118137935626926,
+    "weight_decay": 4.38042861663039e-06,
+    "epochs": 200,
+    "patience": 20,
+    "fixed_pos_weight": 1.3380590840942796,
+    "kan_l1": 0.002683599239016578,
+    "kl_beta": 0.0001,
+    "kl_warmup_fraction": 0.25,
+    "gradient_clip_norm": 0.34235223941838555,
+    "threshold": 0.5,
+    "seed": 42
+  }
+}

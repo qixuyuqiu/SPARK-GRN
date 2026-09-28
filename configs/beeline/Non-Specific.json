@@ -1,0 +1,43 @@
+{
+  "dataset": "BEELINE-Non-Specific",
+  "model": {
+    "hidden_dim": 256,
+    "gnn_layers": 3,
+    "gat_heads": 2,
+    "rna_dropout": 0.37235662159516203,
+    "vib_bottleneck_dim": 256,
+    "vib_hidden_multiplier": 2,
+    "vib_logvar_min": -6.0,
+    "vib_logvar_max": 2.0,
+    "atac_dropout": 0.2,
+    "fusion_heads": 4,
+    "fusion_layers": 1,
+    "fusion_ff_multiplier": 2,
+    "fusion_dropout": 0.2,
+    "fusion_gate_floor": 0.1,
+    "fusion_initial_atac_weight": 0.5,
+    "fusion_residual_alpha_init": 0.05,
+    "kan_hidden_dims": [
+      128,
+      16
+    ],
+    "kan_grid_size": 5,
+    "kan_spline_order": 3,
+    "kan_residual_alpha_init": 0.8502105018297452,
+    "modality": "RNA_ONLY"
+  },
+  "training": {
+    "batch_size": 1024,
+    "learning_rate": 0.0006503427775491052,
+    "weight_decay": 0.00034246534312490254,
+    "epochs": 200,
+    "patience": 20,
+    "fixed_pos_weight": 1.085506949607243,
+    "kan_l1": 1.6325329541501648e-05,
+    "kl_beta": 0.0001,
+    "kl_warmup_fraction": 0.25,
+    "gradient_clip_norm": 3.299842912729156,
+    "threshold": 0.5,
+    "seed": 42
+  }
+}
