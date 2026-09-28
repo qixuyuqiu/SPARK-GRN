@@ -161,7 +161,7 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument("--folds", nargs="+", type=int, default=[1, 2, 3, 4, 5])
     parser.add_argument("--gpu-ids", nargs="+", default=["0"])
-    parser.add_argument("--max-workers", type=int, default=5)
+    parser.add_argument("--max-workers", type=int, default=1)
     parser.add_argument("--base-seed", type=int, default=20260723)
     parser.add_argument("--python", type=Path, default=Path(sys.executable))
     parser.add_argument(
