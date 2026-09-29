@@ -15,7 +15,7 @@ SPARK-GRN combines four components:
 
 1. a direction-aware dual-branch GATv2 RNA encoder;
 2. a variational encoder for ATAC-derived GeneActivity;
-3. uncertainty-aware residual RNA-ATAC fusion; and
+3. uncertainty-aware residual RNA-ATAC fusion;
 4. a direction-preserving dual-path KAN link scorer.
 
 The same implementation supports RNA-only, paired RNA-ATAC, and unpaired
