@@ -13,11 +13,7 @@ Modality = Literal["BOTH", "RNA_ONLY"]
 
 @dataclass(slots=True)
 class ModelConfig:
-    """Architecture parameters.
-
-    Component types are fixed. Dataset presets may alter capacity,
-    regularization, and initialization, but never swap the architecture.
-    """
+   
 
     hidden_dim: int = 64
     gnn_layers: int = 2
