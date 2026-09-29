@@ -268,6 +268,11 @@ optional command-line arguments are:
 Please cite the associated SPARK-GRN manuscript when using this software. The
 complete citation will be added after publication.
 
+
+## License
+
+SPARK-GRN is released under the MIT License. See [LICENSE](LICENSE) for details.
+
 ## Support
 
 Please report reproducible problems through the GitHub issue tracker and include
